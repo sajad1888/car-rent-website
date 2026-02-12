@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url(/fonts/PlusJakartaSans[wght].ttf);
+}
+
+:root {
+  --blue-primary-500: #3563e9;
+  --informaiton-color: #54A6FF;
+  --black-secondary-500: #1a202c;
+  --black-secondary-400: #596780;
+  --black-secondary-300: #90a3bf;
+  --color-white: #ffffff;
+  --gray-color:#13131399;
+  --color-red: #ed3f3f;
+  --border-color: #c3d4e966;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f6f7f9;
+  font-family: PlusJakartaSans
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
