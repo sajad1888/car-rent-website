@@ -33,3 +33,110 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+header {
+  background-color: var(--color-white);
+  border: 1px solid var(--border-color);
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.2rem 2.5rem;
+  gap: 3rem;
+}
+.navbar .logo h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--blue-primary-500);
+}
+.nav-center {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  order: 1;
+}
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-width: 320px;
+}
+.search-input {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 80%;
+  padding: 1rem;
+  gap: 1rem;
+}
+.search-input .search-icon{
+  cursor: pointer;
+}
+.search-input input[type="search"] {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.search-input input[type="search"]::placeholder {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.search-box .filter-icon {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;;
+}
+.nav-action .icons {
+  display: none;
+  cursor: pointer;
+}
+.nav-action .profile img {
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 640px) {
+  .nav-center {
+    order: 0;
+  }
+  .nav-action .profile img {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+  .search-input,
+  .search-box .filter-icon {
+    border: 0;
+  }
+  .search-input{
+    width: 100%;
+  }
+  .search-box {
+    border: 1px solid var(--border-color);
+    border-radius: 70px;
+    padding: 0 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+  }
+  .nav-action .icons {
+    display: block;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 100%;
+  }
+  .navbar .logo h2{
+    font-size: 3.2rem;
+    margin-right: 3.5rem;
+  }
+}
