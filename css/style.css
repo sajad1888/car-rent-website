@@ -38,6 +38,7 @@ header {
   border: 1px solid var(--border-color);
 }
 .navbar {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -72,7 +73,7 @@ header {
   padding: 1rem;
   gap: 1rem;
 }
-.search-input .search-icon{
+.search-input .search-icon {
   cursor: pointer;
 }
 .search-input input[type="search"] {
@@ -90,7 +91,7 @@ header {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 1rem;
-  cursor: pointer;;
+  cursor: pointer;
 }
 .nav-action .icons {
   display: none;
@@ -100,6 +101,52 @@ header {
   width: 3.2rem;
   height: 3.2rem;
   cursor: pointer;
+}
+.home-section {
+  display: flex;
+  padding: 3.2rem 2.5rem;
+}
+.home__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-1 {
+  background-color: var(--informaiton-color);
+  padding: 2.5rem;
+}
+.card-2 {
+  display: none;
+}
+.home__card h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+}
+.home__card p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-white);
+  width: 75%;
+  margin-bottom: 2.5rem;
+}
+.card-1 button {
+  width: 12rem;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  outline: 0;
+  border: 0;
+  background-color: var(--blue-primary-500);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-white);
+  border-radius: 4px;
+}
+.home__card img {
+  width: 200px;
 }
 @media screen and (min-width: 640px) {
   .nav-center {
@@ -113,7 +160,7 @@ header {
   .search-box .filter-icon {
     border: 0;
   }
-  .search-input{
+  .search-input {
     width: 100%;
   }
   .search-box {
@@ -121,9 +168,19 @@ header {
     border-radius: 70px;
     padding: 0 1.25rem;
   }
+  .home__card h3{
+    font-size: 2.4rem;
+  }
+  .home__card p{
+    font-size: 1.4rem;
+  }
+    .home__card img {
+    width: 250px;
+      margin: 0 30%;
+  }
 }
 @media screen and (min-width: 1024px) {
-  .nav-action{
+  .nav-action {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,8 +192,59 @@ header {
     padding: 1rem;
     border-radius: 100%;
   }
-  .navbar .logo h2{
+  .navbar .logo h2 {
     font-size: 3.2rem;
     margin-right: 3.5rem;
+  }
+  .home-section {
+    gap: 3rem;
+  }
+  .home__card h3 {
+    font-size: 2.6rem;
+    width: 50%;
+    margin-bottom: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .home__card p {
+    font-size: 1.6rem;
+    width: 50%;
+  }
+  .card-2 {
+    display: block;
+    background-color: var(--blue-primary-500);
+    padding: 2.5rem;
+  }
+  .card-1,
+  .card-2 {
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .card-2 button {
+    width: 12rem;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    outline: 0;
+    border: 0;
+    background-color: var(--informaiton-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-white);
+    border-radius: 4px;
+  }
+  .home__card img {
+    position: absolute;
+    bottom: 0rem;
+    width: 250px;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home__card img{
+    right: -10rem;
+    bottom: 0rem;
+    width: 300px;
+    padding-bottom: 2rem;
+    position: absolute;
   }
 }
