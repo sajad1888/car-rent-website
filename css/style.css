@@ -168,15 +168,29 @@ header {
     border-radius: 70px;
     padding: 0 1.25rem;
   }
-  .home__card h3{
-    font-size: 2.4rem;
+  .home__card .btn {
+    margin: 1.5rem auto 0;
   }
-  .home__card p{
+  .home__card .btn button{
+    width: 15rem;
     font-size: 1.4rem;
+    font-weight: 500;
   }
-    .home__card img {
+  .home__card h3 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .home__card p {
+    font-size: 1.4rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .home__card img {
     width: 250px;
-      margin: 0 30%;
+  }
+  .home__card .img {
+    margin: 1rem auto;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -201,13 +215,22 @@ header {
   }
   .home__card h3 {
     font-size: 2.6rem;
-    width: 50%;
+    text-align: start;
+    width: 60%;
     margin-bottom: 2.5rem;
     line-height: 3.5rem;
   }
   .home__card p {
     font-size: 1.6rem;
-    width: 50%;
+    text-align: start;
+    width: 70%;
+  }
+  .home__card .btn {
+    margin:0;
+  }
+  .home__card .btn button{
+    padding: 1.5rem;
+    width: 12rem;
   }
   .card-2 {
     display: block;
@@ -234,14 +257,18 @@ header {
   .home__card img {
     position: absolute;
     bottom: 0rem;
+    right: 3rem;
     width: 250px;
     padding-bottom: 2rem;
+  }
+  .home__card .img {
+    margin:0;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .home__card img{
-    right: -10rem;
+  .home__card img {
+    right: 5rem;
     bottom: 0rem;
     width: 300px;
     padding-bottom: 2rem;
