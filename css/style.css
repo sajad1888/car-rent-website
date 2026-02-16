@@ -256,6 +256,12 @@ header {
   .home__card .img {
     margin: 1rem auto;
   }
+  .booking-form{
+    gap: 2rem;
+  }
+  .switch-btn{
+    padding: 1.6rem;
+  }
   .pick-up-wrapper .title,
   .drop-off-wrapper .title {
     justify-content: center;
@@ -343,6 +349,7 @@ header {
   }
   .booking-form {
     flex-direction: row;
+    gap: 3rem;
   }
   .pick-up-wrapper .title,
   .drop-off-wrapper .title {
