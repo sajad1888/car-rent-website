@@ -32,6 +32,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 3.2rem 2.5rem;
 }
 header {
   background-color: var(--color-white);
@@ -43,7 +44,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 3.2rem 2.5rem;
   gap: 3rem;
 }
 .navbar .logo h2 {
@@ -104,7 +104,6 @@ header {
 }
 .home-section {
   display: flex;
-  padding: 3.2rem 2.5rem;
 }
 .home__card {
   display: flex;
@@ -148,6 +147,71 @@ header {
 .home__card img {
   width: 200px;
 }
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  gap: 1rem;
+}
+.pick-up-wrapper,
+.drop-off-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  padding: 1rem;
+  min-width: 32.5rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.booking-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.booking-fields span {
+  width: 0.2rem;
+  height: 5rem;
+  background-color: var(--border-color);
+}
+.pick-up-wrapper .title,
+.drop-off-wrapper .title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.switch-btn {
+  background-color: var(--blue-primary-500);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.booking-fields .location select,
+.booking-fields .date select,
+.booking-fields .time select {
+  width: 100%;
+  white-space: no-wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: inherit;
+  border: 0;
+  outline: 0;
+  margin-top: 0.75rem;
+}
+
+.booking-fields .location h3,
+.booking-fields .date h3,
+.booking-fields .time h3 {
+  font-weight: bold;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
 @media screen and (min-width: 640px) {
   .nav-center {
     order: 0;
@@ -171,7 +235,7 @@ header {
   .home__card .btn {
     margin: 1.5rem auto 0;
   }
-  .home__card .btn button{
+  .home__card .btn button {
     width: 15rem;
     font-size: 1.4rem;
     font-weight: 500;
@@ -191,6 +255,19 @@ header {
   }
   .home__card .img {
     margin: 1rem auto;
+  }
+  .pick-up-wrapper .title,
+  .drop-off-wrapper .title {
+    justify-content: center;
+  }
+  .pick-up-wrapper .title h3,
+  .drop-off-wrapper .title h3 {
+    font-size: 1.6rem;
+  }
+  .booking-fields .location h3,
+  .booking-fields .date h3,
+  .booking-fields .time h3 {
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -226,9 +303,9 @@ header {
     width: 70%;
   }
   .home__card .btn {
-    margin:0;
+    margin: 0;
   }
-  .home__card .btn button{
+  .home__card .btn button {
     padding: 1.5rem;
     width: 12rem;
   }
@@ -262,10 +339,27 @@ header {
     padding-bottom: 2rem;
   }
   .home__card .img {
-    margin:0;
+    margin: 0;
+  }
+  .booking-form {
+    flex-direction: row;
+  }
+  .pick-up-wrapper .title,
+  .drop-off-wrapper .title {
+    margin-bottom: 2.5rem;
+    justify-content: flex-start;
+  }
+  .booking-fields .location select,
+  .booking-fields .date select,
+  .booking-fields .time select {
+    padding-right: 5rem;
+    margin-top: 1.25rem;
+  }
+  .pick-up-wrapper,
+  .drop-off-wrapper {
+    padding: 1.5rem 2rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .home__card img {
     right: 5rem;
