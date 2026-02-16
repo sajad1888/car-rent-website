@@ -204,13 +204,121 @@ header {
   outline: 0;
   margin-top: 0.75rem;
 }
-
 .booking-fields .location h3,
 .booking-fields .date h3,
 .booking-fields .time h3 {
   font-weight: bold;
   margin-left: 0.5rem;
   font-size: 1.2rem;
+}
+
+.popular-car-section .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+ .popular-car-section .header h3{
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--black-secondary-300);
+}
+.popular-car-section .header .view-all-btn{
+  border: 0;
+  outline: 0;
+  color: var(--blue-primary-500);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.card-container{
+  position: relative;
+  overflow: hidden;
+}
+.card-container::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6rem;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(255, 255, 255), transparent);
+  z-index: 10;
+}
+.car-cards{
+  display: flex;
+  gap:1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  scroll-behavior: smooth;
+}
+.car-cards .card{
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  min-width: 25rem;
+  height: 100%;
+}
+.card .card__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+.card .card__header h3{
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.card .card__header button{
+  outline: 0;
+  border: 0;
+  background-color: inherit;
+}
+.card span{
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--black-secondary-300);
+}
+.card .card__img{
+  margin: 4.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.card .card__img img{
+  width: 200px;
+  height: 60px;
+}
+.card .car-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.card .car-detail div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.card .card__footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__footer .rent-price{
+  font-size: 1.6rem;
+}
+.card__footer button{
+  border: 0;
+  outline: 0;
+  padding: 1.25rem;
+  border-radius: .4rem;
+  background-color: var(--blue-primary-500);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 @media screen and (min-width: 640px) {
   .nav-center {
@@ -275,6 +383,12 @@ header {
   .booking-fields .time h3 {
     font-size: 1.4rem;
   }
+   .popular-car-section .header h3{
+    font-size: 1.6rem;
+   }
+   .popular-car-section .header .view-all-btn{
+    font-size: 1.4rem;
+   }
 }
 @media screen and (min-width: 1024px) {
   .nav-action {
