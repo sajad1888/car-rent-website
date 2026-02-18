@@ -1,3 +1,4 @@
+/* RESET */
 *,
 *::after,
 *::before {
@@ -34,6 +35,7 @@ body {
   margin: 0 auto;
   padding: 3.2rem 2.5rem;
 }
+/* heade section style */
 header {
   background-color: var(--color-white);
   border: 1px solid var(--border-color);
@@ -102,6 +104,7 @@ header {
   height: 3.2rem;
   cursor: pointer;
 }
+/* home section style */
 .home-section {
   display: flex;
 }
@@ -147,7 +150,7 @@ header {
 .home__card img {
   width: 200px;
 }
-
+/* booking form style */
 .booking-form {
   display: flex;
   align-items: center;
@@ -211,7 +214,7 @@ header {
   margin-left: 0.5rem;
   font-size: 1.2rem;
 }
-
+/* popular car section style */
 .popular-car-section .header {
   display: flex;
   align-items: center;
@@ -321,6 +324,7 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
 }
+/* recomend car section style */
 .recomendation-car .header{
   display: flex;
   align-items: center;
@@ -412,7 +416,10 @@ header {
   color: var(--color-white);
   padding: 1.25rem;
 }
+/* media query section */
+/* large mobile */
 @media screen and (min-width: 640px) {
+  /* media query for header section*/
   .nav-center {
     order: 0;
   }
@@ -432,6 +439,7 @@ header {
     border-radius: 70px;
     padding: 0 1.25rem;
   }
+  /* media query for home section */
   .home__card .btn {
     margin: 1.5rem auto 0;
   }
@@ -456,6 +464,7 @@ header {
   .home__card .img {
     margin: 1rem auto;
   }
+  /* media query for booking form section */
   .booking-form {
     gap: 2rem;
   }
@@ -475,6 +484,7 @@ header {
   .booking-fields .time h3 {
     font-size: 1.4rem;
   }
+  /* media query for popular section */
   .popular-car-section .header h3 {
     font-size: 1.6rem;
   }
@@ -482,7 +492,9 @@ header {
     font-size: 1.4rem;
   }
 }
+/* desktop */
 @media screen and (min-width: 1024px) {
+  /* media query for header section*/
   .nav-action {
     display: flex;
     align-items: center;
@@ -499,6 +511,7 @@ header {
     font-size: 3.2rem;
     margin-right: 3.5rem;
   }
+  /* media query for home section*/
   .home-section {
     gap: 3rem;
   }
@@ -521,6 +534,7 @@ header {
     padding: 1.5rem;
     width: 12rem;
   }
+  /* media query for popular section*/
   .card-2 {
     display: block;
     background-color: var(--blue-primary-500);
@@ -585,6 +599,7 @@ header {
     gap: 5rem;
   }
 }
+/* large desktop */
 @media screen and (min-width: 1440px) {
   .home__card img {
     right: 5rem;
