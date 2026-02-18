@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "PlusJakartaSans";
-  src: url(../fonts/PlusJakartaSans[wght].ttf);
+  src: url(../fonts/PlusJakartaSans[wght].ttf) format(".ttf");
 }
 :root {
   --blue-primary-500: #3563e9;
