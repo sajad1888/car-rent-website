@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: "PlusJakartaSans";
-  src: url("../fonts/PlusJakartaSans[wght].ttf") format(".ttf");
+  src: url("../fonts/PlusJakartaSans.ttf") format("truetype");
 }
 :root {
   --blue-primary-500: #3563e9;
@@ -28,7 +28,7 @@ html {
 }
 body {
   background-color: #f6f7f9;
-  font-family: PlusJakartaSans;
+  font-family: "PlusJakartaSans";
 }
 .container {
   max-width: 1440px;
