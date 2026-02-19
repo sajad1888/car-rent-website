@@ -28,7 +28,7 @@ html {
 }
 body {
   background-color: #f6f7f9;
-  font-family: "PlusJakartaSans";
+  font-family: "PlusJakartaSans", Arial, Helvetica, sans-serif;
 }
 .container {
   max-width: 1440px;
