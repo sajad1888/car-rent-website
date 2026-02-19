@@ -325,28 +325,28 @@ header {
   font-weight: 600;
 }
 /* recomend car section style */
-.recomendation-car .header{
+.recomendation-car .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-.recomendation-car .header h3{
+.recomendation-car .header h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--black-secondary-300);
 }
-.recomendation-car .recomendation-car__cards{
+.recomendation-car .recomendation-car__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
-.recomendation-car .recomendation-car__cards span{
+.recomendation-car .recomendation-car__cards span {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--black-secondary-300);
 }
-.recomendation-car__cards .recomendation-car__card{
+.recomendation-car__cards .recomendation-car__card {
   background-color: var(--color-white);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -354,67 +354,135 @@ header {
 .recomendation-car__card .header {
   display: flex;
   align-items: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-.recomendation-car__card .header h4{
+.recomendation-car__card .header h4 {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--black-secondary-500);
 }
-.recomendation-car__card .main{
+.recomendation-car__card .main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 1rem 0;
 }
-.recomendation-car__card .main .main__img{
+.recomendation-car__card .main .main__img {
   width: 70%;
 }
-.recomendation-car__card .main .main__img img{
+.recomendation-car__card .main .main__img img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: contain;
 }
-.recomendation-car__card .main .main__car-detail{
+.recomendation-car__card .main .main__car-detail {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.recomendation-car__card .main .main__car-detail div{
+.recomendation-car__card .main .main__car-detail div {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-.recomendation-car__card .footer{
+.recomendation-car__card .footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.recomendation-car__card .footer .rent-price p{
+.recomendation-car__card .footer .rent-price p {
   font-size: 1.6rem;
   color: var(--black-secondary-300);
 }
-.recomendation-car__card .footer .rent-price p strong{
-  color:var(--black-secondary-500);
+.recomendation-car__card .footer .rent-price p strong {
+  color: var(--black-secondary-500);
   font-weight: 700;
 }
-.recomendation-car__card .footer .rent-btn{
-  padding:1.25rem;
+.recomendation-car__card .footer .rent-btn {
+  padding: 1.25rem;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-white);
   background-color: var(--blue-primary-500);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
-.recomendation-car .footer button{
+.recomendation-car .footer button {
   outline: 0;
   border: 0;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   display: block;
   margin: 3.5rem auto;
   background-color: var(--blue-primary-500);
   color: var(--color-white);
   padding: 1.25rem;
+}
+/* footer section style */
+footer .title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--blue-primary-500);
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+footer .title p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black-secondary-300);
+  line-height: 200%;
+  width: 70%;
+}
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.nav-link div h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+.nav-link div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.nav-link div ul li a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--black-secondary-300);
+}
+.line{
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  width: 90%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+.copy-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.copy-right p {
+  flex: 0 0 100%;
+  order: 1;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black-secondary-500);
+}
+.copy-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.copy-right div a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black-secondary-500);
 }
 /* media query section */
 /* large mobile */
@@ -490,6 +558,35 @@ header {
   }
   .popular-car-section .header .view-all-btn {
     font-size: 1.4rem;
+  }
+  /* media queray for footer section */
+  footer {
+    background-color: var(--color-white);
+  }
+  footer .title h2 {
+    font-size: 3.2rem;
+  }
+  footer .title p {
+    font-size: 1.6rem;
+    width: 40%;
+  }
+  .nav-link {
+    justify-content: space-around;
+  }
+  .copy-right{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .copy-right div{
+    justify-content: flex-start;
+    gap: 2rem;
+    width: auto;
+    margin-right: 1rem;
+  }
+  .copy-right p{
+    order: -1;
+    flex: 0 0 auto;
+  
   }
 }
 /* desktop */
@@ -586,18 +683,30 @@ header {
   .drop-off-wrapper {
     padding: 1.5rem 2rem;
   }
-  .recomendation-car__card .main{
+  .recomendation-car__card .main {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2.5rem;
   }
-  .recomendation-car__card .main .main__img{
+  .recomendation-car__card .main .main__img {
     width: 90%;
   }
-  .recomendation-car__card .main .main__car-detail{
+  .recomendation-car__card .main .main__car-detail {
     flex-direction: row;
     gap: 5rem;
   }
+  /* media query for footer section */
+  footer > div{
+    display: flex;
+  }
+  footer .title p{
+    width: 60%;
+  }
+  .nav-link {
+    justify-content: flex-start;
+    gap: 6rem;
+  }
+  
 }
 /* large desktop */
 @media screen and (min-width: 1440px) {
